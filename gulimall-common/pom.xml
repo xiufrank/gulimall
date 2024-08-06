@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.atgugui.gulimall</groupId>
+    <groupId>com.atguigu.gulimall</groupId>
     <artifactId>gulimall-common</artifactId>
     <version>1.0-SNAPSHOT</version>
     <description>每一个微服务公共的依赖，bean，工具类等</description>
@@ -47,8 +47,8 @@
 
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -69,9 +69,34 @@
             <artifactId>validation-api</artifactId>
             <version>2.0.1.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.18</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.9.0</version>
+            <scope>compile</scope>
+        </dependency>
+
 
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencyManagement>
         <dependencies>
