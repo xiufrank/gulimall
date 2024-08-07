@@ -13,9 +13,9 @@ package com.atguigu.common.validator;
 import com.atguigu.common.exception.RRException;
 import com.atguigu.common.utils.Constant;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 import java.util.Set;
 
 /**
