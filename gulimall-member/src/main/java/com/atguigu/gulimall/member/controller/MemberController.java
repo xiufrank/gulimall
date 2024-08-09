@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,12 @@ import com.atguigu.common.utils.R;
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
+
+    @Value("${persion.name}")
+    private String name;
+    @Value("${persion.age}")
+    private int age;
+
     @Autowired
     private MemberService memberService;
 
@@ -48,8 +55,10 @@ public class MemberController {
     @RequestMapping("/info/{id}")
     //@RequiresPermissions("member:member:info")
     public R info(@PathVariable("id") Long id){
-		MemberEntity member = memberService.getById(id);
-
+//		MemberEntity member = memberService.getById(id);
+        MemberEntity member = new MemberEntity();
+        member.setNickname(name);
+        member.setGrowth(age);
         return R.ok().put("member", member);
     }
 
