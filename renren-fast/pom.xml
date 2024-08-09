@@ -11,14 +11,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.8</version>
+		<version>2.6.13</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 		<mybatisplus.version>3.3.1</mybatisplus.version>
 		<mysql.version>8.0.33</mysql.version>
 		<mssql.version>4.0</mssql.version>
@@ -163,26 +163,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
-			<artifactId>shiro-core</artifactId>
-			<classifier>jakarta</classifier>
-			<version>${shiro.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.shiro</groupId>
-			<artifactId>shiro-web</artifactId>
-			<classifier>jakarta</classifier>
-			<version>${shiro.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.shiro</groupId>
-					<artifactId>shiro-core</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
-			<classifier>jakarta</classifier>
 			<version>${shiro.version}</version>
 		</dependency>
 		<dependency>

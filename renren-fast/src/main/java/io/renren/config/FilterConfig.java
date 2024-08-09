@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
-import jakarta.servlet.DispatcherType;
+import javax.servlet.DispatcherType;
 
 /**
  * Filter配置

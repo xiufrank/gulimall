@@ -11,7 +11,7 @@ package io.renren.common.utils;
 import com.alibaba.druid.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * IP地址

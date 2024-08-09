@@ -8,9 +8,9 @@
 
 package com.atguigu.common.xss;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.HttpServletRequest;
 
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**

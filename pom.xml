@@ -9,10 +9,6 @@
     <description>谷粒商城-聚合服务</description>
     <packaging>pom</packaging>
 
-    <properties>
-        <java.version>17</java.version>
-    </properties>
-
     <modules>
         <module>gulimall-common</module>
         <module>gulimall-coupon</module>
@@ -21,8 +17,8 @@
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
-<!--        <module>renren-fast</module>-->
-<!--        <module>renren-generator</module>-->
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
     <build>
@@ -31,8 +27,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>

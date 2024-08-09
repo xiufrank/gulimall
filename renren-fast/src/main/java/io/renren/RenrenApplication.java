@@ -14,7 +14,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@MapperScan("io.renren.modules.sys.dao")
 public class RenrenApplication {
 
 	public static void main(String[] args) {
