@@ -48,8 +48,10 @@ public class CouponController {
     @RequestMapping("/info/{id}")
     //@RequiresPermissions("coupon:coupon:info")
     public R info(@PathVariable("id") Long id){
-		CouponEntity coupon = couponService.getById(id);
-
+//		CouponEntity coupon = couponService.getById(id);
+        CouponEntity coupon = new CouponEntity();
+        coupon.setNum(100);
+        coupon.setCouponName("满100减20");
         return R.ok().put("coupon", coupon);
     }
 
