@@ -1,6 +1,7 @@
 package com.atguigu.gulimall.coupon.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,14 @@ import com.atguigu.common.utils.R;
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @RequestMapping("/member/list")
+    public R memberList(){
+        CouponEntity coupon = new CouponEntity();
+        coupon.setNum(8);
+        coupon.setCouponName("满100减50");
+        return R.ok().put("data", List.of(coupon));
+    }
 
     /**
      * 列表
